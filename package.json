@@ -1,0 +1,34 @@
+{
+  "name": "hw13-big-fernand-node-express-handlebars-orm",
+  "version": "1.0.0",
+  "description": "Big Fernand Burger logger enabled via MySQL, Node, Express, Handlebars and a custom made ORM.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/palowenstein/big-fernand-node-express-handlebars-orm.git"
+  },
+  "keywords": [
+    "bigFernand",
+    "burgerMenu",
+    "mySQL",
+    "node",
+    "express",
+    "handlebars",
+    "orm"
+  ],
+  "author": "Pierre Andre Lowenstein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/palowenstein/big-fernand-node-express-handlebars-orm/issues"
+  },
+  "homepage": "https://github.com/palowenstein/big-fernand-node-express-handlebars-orm#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "handlebars": "^4.7.6",
+    "mysql": "^2.18.1"
+  }
+}
