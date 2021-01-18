@@ -1,8 +1,8 @@
--- Drops the bigFernand database if it already exists --
-DROP DATABASE IF EXISTS bigFernand_db;
+-- Drops the bigFernand database (schema) if it already exists --
+DROP SCHEMA IF EXISTS bigFernand_db;
 
--- Creates the bigFernand database and greenlights it for use.
-CREATE DATABASE bigFernand_db;
+-- Creates the bigFernand database (schema) and greenlights it for use.
+CREATE SCHEMA bigFernand_db;
 
 USE bigFernand_db;
 
