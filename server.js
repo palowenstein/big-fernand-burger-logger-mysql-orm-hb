@@ -26,7 +26,9 @@ var routes = require("./controllers/burger_controllers.js");
 app.use(routes);
 
 app.listen(PORT, function() {
-  console.log("The Big Fernand Buger Application is executing at localhost:" + PORT);
+  console.log("The Big Fernand Burger Application is executing at localhost:" + PORT);
 });
 
-// Except for line 3 (const path) and line 24 ("./controllers/burger_controllers.js"), the code above is extracted from activity #17 / week 13 ("MVC") which was done in class. The var(s) express, PORT, app were converted to const(s).
+// Except for line 3 (require path) and line 24 ("./controllers/burger_controllers.js"),
+// the code above is extracted from activity #17 / week 13 ("MVC") which was done in class.
+// The var(s) express, PORT, app were converted to const(s).
