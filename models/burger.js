@@ -9,13 +9,13 @@ selectAll: (cb) => {
       cb(res);
     });
   },
-  // The variables burger and eaten are arrays.
-  insertOne: (burger, eaten, cb) => {
+// The variables burger and eaten are arrays.
+insertOne: (burger, eaten, cb) => {
     orm.insertOne("burgers", burger, eaten, res => {
       cb(res);
     });
   },
-  updateOne: (objColVals, cb) => {
+updateOne: (objColVals, cb) => {
     orm.updateOne("burgers", objColVals, res => {
       cb(res);
     });
