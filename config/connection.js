@@ -1,6 +1,8 @@
 // Set up MySQL connection (networkOne).
 const mysql = require("mysql");
 
+// Heroku Settings
+
 let networkOne;
 
 if (process.env.JAWSDB_URL) {
@@ -10,23 +12,33 @@ if (process.env.JAWSDB_URL) {
     host: "localhost",
     port: 3306,
     user: "root",
-    password: "Margaux0228",
+    password: "insert your database password here",
     database: "bigFernand_db"
   });
-
+    
 // Make connection.
-connection.connect();
+  networkOne.connect();
 
 
-  // Make connection (networkOne).
-  // networkOne.connect(function(err) {
-  //   if (err) {
-  //     console.error("error connecting: " + err.stack);
-  //     return;
-  //   }
-  //   console.log("connected as id " + networkOne.threadId);
-  // });
+/* // Local Settings
+  let networkOne = mysql.createConnection({
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "insert your database password here",
+    database: "bigFernand_db"
+  });
   
+//  Make connection (networkOne).
+  networkOne.connect(function(err) {
+    if (err) {
+      console.error("error connecting: " + err.stack);
+      return;
+    }
+    console.log("connected as id " + networkOne.threadId);
+  }); */
+
+
   // Export connection (networkOne) for our ORM to use.
   module.exports = networkOne;
   
