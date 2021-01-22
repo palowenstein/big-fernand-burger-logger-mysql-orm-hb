@@ -3,7 +3,7 @@
 
 <h3>Big Fernand Burger logger enabled via MySQL, Node, Express, Handlebars and a custom made ORM.</h3>
 <p>Github Repository Page: https://github.com/palowenstein/big-fernand-node-express-handlebars-orm</p>
-<p>Github Deployment Page: </p>
+<p>Heroku Deployment Page: https://still-bayou-56367.herokuapp.com/</p>
 
 # Table of Contents
   * [Overview](#Overview)
