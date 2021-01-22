@@ -3,17 +3,20 @@ const mysql = require("mysql");
 
 // Heroku Settings
 
+
+mysql://bd5538220a60b5:b9636c76@us-cdbr-east-03.cleardb.com/heroku_f9724ab1dde3e41?reconnect=true
+
 let networkOne;
 
-if (process.env.JAWSDB_URL) {
-  networkOne = mysql.createConnection(process.env.JAWSDB_URL);
+if (process.env.CLEARDB_DATABASE_URL) {
+  networkOne = mysql.createConnection(process.env.CLEARDB_DATABASE_URL);
 } else {
   networkOne = mysql.createConnection({
-    host: "localhost",
+    host: "us-cdbr-east-03.cleardb.com",
     port: 3306,
-    user: "root",
-    password: "Margaux0228",
-    database: "bigFernand_db"
+    user: "bd5538220a60b5",
+    password: "b9636c76",
+    database: "heroku_f9724ab1dde3e41"
   });
     
 // Make connection.
@@ -25,7 +28,7 @@ if (process.env.JAWSDB_URL) {
     host: "localhost",
     port: 3306,
     user: "root",
-    password: "Margaux0228",
+    password: "Insert your local password here",
     database: "bigFernand_db"
   });
   
