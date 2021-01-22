@@ -1,11 +1,16 @@
 // Set up MySQL connection (networkOne).
 const mysql = require("mysql");
 
-let networkOne = mysql.createConnection({
+let networkOne;
+
+if (process.env.JAWSDB_URL) {
+  networkOne = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  networkOne = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
-    password: "Margaux0228",
+    password: "insert your database password here",
     database: "bigFernand_db"
   });
   
