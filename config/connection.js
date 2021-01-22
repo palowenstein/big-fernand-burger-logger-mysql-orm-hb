@@ -3,7 +3,7 @@ const mysql = require("mysql");
 
 // Heroku Settings
 
-/* let networkOne;
+let networkOne;
 
 if (process.env.JAWSDB_URL) {
   networkOne = mysql.createConnection(process.env.JAWSDB_URL);
@@ -18,9 +18,9 @@ if (process.env.JAWSDB_URL) {
     
 // Make connection.
   networkOne.connect();
- */
 
-// Local Settings
+
+/* // Local Settings
   let networkOne = mysql.createConnection({
     host: "localhost",
     port: 3306,
@@ -36,7 +36,7 @@ if (process.env.JAWSDB_URL) {
       return;
     }
     console.log("connected as id " + networkOne.threadId);
-  });
+  }); */
 
 
   // Export connection (networkOne) for our ORM to use.
