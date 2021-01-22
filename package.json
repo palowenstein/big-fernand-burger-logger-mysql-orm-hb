@@ -2,9 +2,10 @@
   "name": "hw13-big-fernand-node-express-handlebars-orm",
   "version": "1.0.0",
   "description": "Big Fernand Burger logger enabled via MySQL, Node, Express, Handlebars and a custom made ORM.",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
