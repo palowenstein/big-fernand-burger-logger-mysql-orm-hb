@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'bodoni_72_smallcapsbook';
+  src: url('../fonts/bodoni_72_smallcaps_book-webfont.woff2') format('woff2'),
+       url('../fonts/bodoni_72_smallcaps_book-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+font-family: 'BebasNeueRegular';
+src: url('https://cdn-app.myli.io/fonts/BebasNeueRegular.otf') format('opentype');
+font-weight: normal;
+font-style: normal;
+}
+
+body {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-family: 'bodoni_72_smallcapsbook', 'BebasNeueRegular', 'WebFont', Arial, sans-serif;
+}
+
+/* Main */
+
+.logo_region {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;  
+  margin-bottom: 20px;
+}
+
+.logo_img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.bigFernand_burgers_row {
+  height: 128px;
+  margin-bottom: 20px;
+}
+
+.bigFernand_burgers_img {
+  width: 100%;
+}
+
+/* Index */
+
+#burger-insert1 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nouveau_burge {
+  font-size: 2em;
+}
+
+.pret_a_devorer {
+  margin: 0 auto;
+}
+
+.devorez-le {
+  font-size: 1em;
+}
+
+.bodybuilder {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Bullet Removal - occurs twice */
+.pas_de_billes {
+  list-style: none;
+  font-size: 1.5em;
+}
