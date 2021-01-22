@@ -13,15 +13,19 @@ if (process.env.JAWSDB_URL) {
     password: "Margaux0228",
     database: "bigFernand_db"
   });
-  
+
+// Make connection.
+connection.connect();
+
+
   // Make connection (networkOne).
-  networkOne.connect(function(err) {
-    if (err) {
-      console.error("error connecting: " + err.stack);
-      return;
-    }
-    console.log("connected as id " + networkOne.threadId);
-  });
+  // networkOne.connect(function(err) {
+  //   if (err) {
+  //     console.error("error connecting: " + err.stack);
+  //     return;
+  //   }
+  //   console.log("connected as id " + networkOne.threadId);
+  // });
   
   // Export connection (networkOne) for our ORM to use.
   module.exports = networkOne;
