@@ -6,8 +6,8 @@ const mysql = require ('mysql');
 const orm = {
     selectAll: function(tableInput, cb) {
         let queryString = "SELECT * FROM " + tableInput + ";";
+        
         networkTwo.query(queryString, function(err, result) {
-          console.log(err)
           if (err) { throw err; }
           cb(result);
         });
@@ -20,7 +20,6 @@ const orm = {
         networkTwo.query(sql, function(err, result) {
           if (err) { throw err; }
           cb(result);
-  
         });
       },
       // An example of objColVals would be {name: panther, sleepy: true}      
