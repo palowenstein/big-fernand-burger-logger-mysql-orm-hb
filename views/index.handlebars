@@ -1,0 +1,67 @@
+<!-- .container is main centered wrapper -->
+<div class="container">
+
+<div class="row">  <!-- Start Row -->
+
+    <div class="twelve columns">  <!-- Start 12 Columns -->
+            <div id="burger-insert1"> <!-- Start Burgé Plus -->
+              <form action="burger/insert1" method="POST"> <!-- Form Declaration + Add Burger + Post Method -->
+                <label for="new_burger" class="nouveau_burge">Ajoutez un nouveau burg&eacute;!</label>
+                <input type="text" name="burger_name" placeholder="Nouveau Burg&eacute;">
+                <button type="submit"><i class="fas fa-plus"><!-- Font Awesome Plus Symbol --></i></button>
+              </form>
+            </div> <!-- End Burgé Plus -->
+    </div>   <!-- End 12 columns -->
+
+</div>    <!-- End Row -->
+
+<div class="row"> <!-- Start Row -->
+
+    <div class="six columns"> <!-- Start 6 Columns -->
+      <div class="pret_a_devorer"> <!-- Start Prêt a Dévorer -->
+      <h3>Prêt à Dévorer</h3>
+        {{#each burgers}}
+          {{#unless devoured}}
+          <form action="burger/update1/{{id}}" method="POST">
+             <ul class="pas_de_billes">
+              <li>
+              <button type="submit" class="devorez-le">{{id}} — {{burger_name}}</button>
+              </li>
+            </ul>
+          </form>
+          {{/unless}}
+        {{/each}}
+      </div>  <!-- End Prêt a Dévorer -->
+    </div> <!-- End six columns -->
+
+    <div class="six columns">  <!-- Start 6 Columns -->
+      <div id="devore">   <!-- Dévoré -->
+      <h3>Dévoré!</h3>
+        {{#each burgers}}
+          {{#if this.devoured}}
+            <ul class="pas_de_billes">
+                <li>{{this.id}} — {{this.burger_name}}</li>
+            </ul>
+          {{/if}}
+        {{/each}}
+      </div>    <!-- End Dévoré -->
+    </div>  <!-- End six columns -->
+
+</div>  <!-- End Row -->
+
+
+<div class="row">  <!-- Start Row -->
+    <div class="twelve columns bodybuilder">  <!-- Start 12 Columns -->   
+    <img src="./assets/img/bigFernand_bodybuilder.png" alt="Big Fernand Bodybuilder" />
+    </div>   <!-- End 12 columns -->     
+</div>    <!-- End Row -->
+
+
+</div>  <!-- End Container -->
+
+{{!-- 
+   * Create the `layouts` directory inside `views` directory.
+     * Create the `main.handlebars` file inside `layouts` directory.
+     * Setup the `main.handlebars` file so it's able to be used by Handlebars.
+     * Setup the `index.handlebars` to have the template that Handlebars can render onto.
+     * Create a button in `index.handlebars` that will submit the user input into the database. --}}
