@@ -6,11 +6,11 @@ CREATE SCHEMA bigFernand_db;
 
 USE bigFernand_db;
 
--- Creates the burgers table with 1) id, 2) burger_name, 3) eaten_burger.
+-- Creates the burgers table with 1) id, 2) burger_name, 3) devoured.
 CREATE TABLE burgers (
   id int NOT NULL AUTO_INCREMENT,
   burger_name varchar(50) NOT NULL,
-  eaten_burger boolean DEFAULT false,
+  devoured boolean DEFAULT false,
   PRIMARY KEY (id)
 );
 
@@ -22,5 +22,5 @@ CREATE TABLE burgers (
 --    * Create a `burgers` table with these fields:
 --      * **id**: an auto incrementing int that serves as the primary key.
 --      * **burger_name**: a string.
---      * **eaten_burger**: a boolean (true/false).
+--      * **devoured**: a boolean (true/false).
 -- 3. Still in the `db` folder, create a `seeds.sql` file. In this file, write insert queries to populate the `burgers` table with at least three entries.
