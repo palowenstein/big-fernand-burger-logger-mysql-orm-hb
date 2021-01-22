@@ -6,7 +6,6 @@
 <p>Github Deployment Page: </p>
 
 # Table of Contents
-  * [GIF](#Gif)
   * [Overview](#Overview)
   * [Details](#Details)
   * [Instructions](#Instructions)
@@ -17,7 +16,15 @@
   * [Contact](#Contact)
 
 
+## Screenshots
 
+![MySQL Node Express Handlebars ORM Big Fernand Burger Logger — Compiling the application for Heroku deployment (PNG)](./demo_assets/ucla-hw13-big-fernand-node-express-handlebars-orm-heroku-compile.png "MySQL Node Express Handlebars ORM Big Fernand Burger Logger — Compiling the application for Heroku deployment (PNG)")
+<p>Fig. 1. MySQL/ORM/Node/Express/Handlebars Big Fernand Burger Logger — Compiling the application for Heroku deployment (PNG)</p>
+<br />
+
+![MySQL Node Express Handlebars ORM Big Fernand Burger Logger — Running the Application under Heroku (JPG)](./demo_assets/ucla-hw13-big-fernand-node-express-handlebars-orm-application-at-startup.jpg "MySQL Node Express Handlebars ORM Big Fernand Burger Logger — Running the Application under Heroku (JPG)")
+<p>Fig. 2. MySQL/ORM/Node/Express/Handlebars Big Fernand Burger Logger — Running the Application under Heroku (JPG)</p>
+<br />
 
 
 ## References
