@@ -3,19 +3,20 @@ const orm = require('../config/orm');
 
 // The code below calls the ORM functions using burger specific input for the ORM.
 const burger = {
-
-selectAll: (cb) => {
+  
+  selectAll: (cb) => {
     orm.selectAll("burgers", res => {
       cb(res);
     });
   },
-// The variables burger and eaten are arrays.
-insertOne: (burger, eaten, cb) => {
-    orm.insertOne("burgers", burger, eaten, res => {
+
+  insertOne: (burger, devoured, cb) => {
+    orm.insertOne("burgers", burger, devoured, res => {
       cb(res);
     });
   },
-updateOne: (objColVals, cb) => {
+
+  updateOne: (objColVals, cb) => {
     orm.updateOne("burgers", objColVals, res => {
       cb(res);
     });
