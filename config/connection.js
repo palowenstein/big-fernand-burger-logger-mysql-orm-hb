@@ -5,7 +5,7 @@ let networkOne = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
-    password: "",
+    password: "Margaux0228",
     database: "bigFernand_db"
   });
   
