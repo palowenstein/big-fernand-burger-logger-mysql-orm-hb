@@ -1,49 +1,49 @@
 // Set up MySQL connection (networkOne).
 const mysql = require("mysql");
 
-// Heroku Settings
+// Pure Heroku Settings (this bypasses the local db altogether)
+let networkOne = mysql.createConnection({
+    host: "us-cdbr-east-03.cleardb.com",
+    user: "bd5538220a60b5",
+    port: 3306,
+    password: "Enter CLEARDB Password here",
+    database: "heroku_f9724ab1dde3e41"
+  });
 
+// Make connection.
+  networkOne.connect();
+
+/* // Heroku + Local Settings
 let networkOne;
 
-if (process.env.JAWSDB_URL) {
-  networkOne = mysql.createConnection(process.env.JAWSDB_URL);
+if (process.env.CLEARDB_DATABASE_URL) {
+
+  networkOne = mysql.createConnection({
+    host: "us-cdbr-east-03.cleardb.com",
+    user: "bd5538220a60b5",
+    port: 3306,
+    password: "Enter CLEARDB Password here",
+    database: "heroku_f9724ab1dde3e41"
+  });
+
 } else {
+
   networkOne = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
-    password: "Margaux0228",
+    password: "Enter local db password here",
     database: "bigFernand_db"
+  
   });
     
 // Make connection.
-  networkOne.connect();
-
-
-/* // Local Settings
-  let networkOne = mysql.createConnection({
-    host: "localhost",
-    port: 3306,
-    user: "root",
-    password: "Margaux0228",
-    database: "bigFernand_db"
-  });
-  
-//  Make connection (networkOne).
-  networkOne.connect(function(err) {
-    if (err) {
-      console.error("error connecting: " + err.stack);
-      return;
-    }
-    console.log("connected as id " + networkOne.threadId);
-  }); */
+  networkOne.connect(); */
 
 
   // Export connection (networkOne) for our ORM to use.
   module.exports = networkOne;
   
-// Note: `let`, is a signal that the variable may be reassigned, such as a counter in a loop, or a value swap in an algorithm.
-// It also signals that the variable will be used only in the block it’s defined in, which is not always the entire containing function.
 
 // 1. Inside your `burger` directory, create a folder named `config`.
 // 2. Create a `connection.js` file inside `config` directory.
