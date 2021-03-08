@@ -1,7 +1,7 @@
 // Set up MySQL connection (networkOne).
 const mysql = require("mysql");
 
-// Pure Heroku Settings (this bypasses the local db altogether)
+// Heroku Settings (CLEARDB). This bypasses the local db altogether.
 let networkOne = mysql.createConnection({
     host: "us-cdbr-east-03.cleardb.com",
     user: "bd5538220a60b5",
@@ -10,10 +10,7 @@ let networkOne = mysql.createConnection({
     database: "heroku_f9724ab1dde3e41"
   });
 
-// Make connection.
-  networkOne.connect();
-
-/* // Heroku + Local Settings
+/* Combined Settings: Heroku (CLEARDB) + Local Settings
 let networkOne;
 
 if (process.env.CLEARDB_DATABASE_URL) {
@@ -34,16 +31,14 @@ if (process.env.CLEARDB_DATABASE_URL) {
     user: "root",
     password: "Enter local db password here",
     database: "bigFernand_db"
-  
   });
-    
-// Make connection.
-  networkOne.connect(); */
+*/
 
+  // Make connection.
+  networkOne.connect();
 
   // Export connection (networkOne) for our ORM to use.
   module.exports = networkOne;
-  
 
 // 1. Inside your `burger` directory, create a folder named `config`.
 // 2. Create a `connection.js` file inside `config` directory.
