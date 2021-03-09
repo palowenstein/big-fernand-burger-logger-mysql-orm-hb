@@ -28,7 +28,7 @@
 <li>The French themed Big Fernand Burger enables 2 types of action:
   <ol>
     <li>Adding a burger via the input field window.</li>
-    <li>Moving an available burger to the "devoured" section (right column) by clicking on its name in the left column.</li>
+    <li>Moving an available burger (left column) to the "devoured" section (right column) by clicking on its name.</li>
   </ol>
 </li>
 <li>The application uses a Model View Controller (MVC) targetting the <strong>Handlebars</strong> templating language in its Express version.</li>
