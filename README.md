@@ -55,9 +55,9 @@
 
 ## Instructions
 <ul>
-<li>Makes sure MySQL is properly installed, password initiated and running in the background as seen in the Details section illustration above.</li>
-<li>In MySQL Workbench, load the schema.sql file, located in the application db folder, then initiate it by clicking on the lightning bolt (GIF/MP4).</li>
-<li>Still in MySQL Workbench, locate the seed.sql file in the application db folder then, as in the prior step, initiate it by clicking on the lightning bolt (GIF/MP4).</li>
+<li>Makes sure MySQL is properly installed, password initiated and running in the background as seen in the screenshot above.</li>
+<li>In MySQL Workbench, load the schema.sql file, located in the application db folder, then initiate it by clicking on the lightning bolt</li>
+<li>Still in MySQL Workbench, locate the seeds.sql file in the application db folder then, as in the prior step, initiate it by clicking on the lightning bolt.</li>
 <li>In the Application folder, open config/<strong>connection.js</strong> in a text / code editor, add your MySQL Password on line 21.</li>
 <li>In Terminal, locate the application folder and enter into it via the 'cd' command: cd big-fernand-burger-logger-mysql-orm-hb</li>
 <li>Run the 'npm install' command to install the necessary node modules from the package.json.</li>
