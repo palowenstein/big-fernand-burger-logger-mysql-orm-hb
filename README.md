@@ -27,40 +27,16 @@
 <ul>
 <li>The French themed Big Fernand Burger enables 2 types of action:
   <ol>
-    <li>Adding a burger.</li>
-    <li>Moving a burger to the "devoured" section.</li>
+    <li>Adding a burger via the input field window.</li>
+    <li>Moving an available burger to the "devoured" section (right column) by clicking on its name in the left column.</li>
   </ol>
 </li>
-<li>The application is powered by Node.js, plain vanilla javascript, MySQL relational database</li>
-
-
-	<li>ORM Object–Relational Mapping</li>
-	<li>MySQL Relational Database Structure.</li>
-	<li>Node.js Javascript Library.</li>
-	<li>Express for GET/POST/DELETE Requests between REST APIs.</li>
-	<li>Handlebars Templating Language</li>
-	<li>Package.JSON / NPM for installing dependencies</li>
-  <li>Heroku Install: JAWS_DB or CLEAR_DB SQL Database</li>
-
-
-, Node, Express. Organized as a MVC (Model View Controller) targetting Handlebars, plus using a homemade ORM (Object-relational Mapper).  to allow for JS execution outside of the browser (Mac Terminal window), Express (Get/Post Requests between REST 'Representational State Transfer' APIs), Inquirer (for information collection), Console.table (for a clean table display) and a MySQL database which stores the information created, read, updated or deleted (CRUD).</li>
-<li>The MySQL database, stored in the db folder as <strong>schema.sql</strong>, can be initiatied via Terminal or, more simply, via MySQL Workbench (GIF/MP4).</li>
-<li>In addition of the database schema, the db folder also contains a <strong>seed.sql</strong> file which will populate the database at startup so that it doesn't show empty.</li>
-
+<li>The application uses a Model View Controller (MVC) targetting the <strong>Handlebars</strong> templating language in its Express version.</li>
+<li>A custom made ORM (Object-relational Mapper) is used to connect the object code to the MySQL relational database, creating defacto a virtual object database.</li>
+<li>Overall, the program is powered via Node.js, vanilla javascript, Express for GET/POST Requests between REST APIs, a MySQL relational database (either local or remote via an heroku add-on) to hold the burger information, and the previously mentioned MVC, Handlebars, ORM technologies.</li>
+<li>The MySQL database, stored in the db folder as <strong>schema.sql</strong>, can be initiated via Terminal or, more simply, via MySQL Workbench.</li>
+<li>In addition of the database schema, the db folder also contains a <strong>seeds.sql</strong> file which will populate the database so that the application doesn't show empty when run at first.</li>
 </ul>
-
-
-</ul>
-
-
-
-
-
-
-
-
-
-
 
 ## Details
 <ul>
@@ -86,6 +62,9 @@
 <li>In Terminal, locate the application folder and enter into it via the 'cd' command: cd big-fernand-burger-logger-mysql-orm-hb</li>
 <li>Run the 'npm install' command to install the necessary node modules from the package.json.</li>
 <li>Run the 'node server.js' command to launch the application. If executed locally, it will appear as localhost:4000 in your browser.</li>
+<li>When run initially, the application will show a selection of 5 burgers ready to be eaten and 1 burger already devoured.</li>
+<li>New burgers can be added via the input field window.</li>
+<li>Burgers available for consumption will be moved to the "devoured" section when clicked onto.</li>
 </ul>
 
 ## Screenshots
