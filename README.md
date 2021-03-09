@@ -32,7 +32,7 @@
   </ol>
 </li>
 <li>The application uses a Model View Controller (MVC) targetting the <strong>Handlebars</strong> templating language in its Express version.</li>
-<li>A custom made ORM (Object-relational Mapper) is used to connect the object code to the MySQL relational database, creating defacto a virtual object database.</li>
+<li>A custom made ORM (Object-relational Mapper) is used to connect the object code to the MySQL relational database, creating a defacto virtual object database.</li>
 <li>Overall, the program is powered via Node.js, vanilla javascript, Express for GET/POST Requests between REST APIs, a MySQL relational database (either local or remote via an heroku add-on) to hold the burger information, and the previously mentioned MVC, Handlebars, ORM technologies.</li>
 <li>The MySQL database, stored in the db folder as <strong>schema.sql</strong>, can be initiated via Terminal or, more simply, via MySQL Workbench.</li>
 <li>In addition of the database schema, the db folder also contains a <strong>seeds.sql</strong> file which will populate the database so that the application doesn't show empty when run at first.</li>
